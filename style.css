@@ -222,7 +222,7 @@ li{
 .leftside .img1{
     background-image: url(/bags/bag\ closeup.jpg);
     z-index: 1;
-    transform: translate(-70px,35px) rotate(-12deg);
+    transform: translate(-50px,10px) rotate(-10deg);
 }
 
 /* Center Card */
@@ -236,12 +236,12 @@ li{
 .leftside .img3{
     background-image: url(/bags/bag\ stitch.jpg);
     z-index: 2;
-    transform: translate(70px,35px) rotate(12deg);
+    transform: translate(50px,10px) rotate(10deg);
 }
 
 /* Hover Effect */
 .leftside:hover .img1{
-    transform: translate(-140px,45px) rotate(-18deg);
+    transform: translate(-140px,40px) rotate(-15deg);
 }
 
 .leftside:hover .img2{
@@ -249,7 +249,7 @@ li{
 }
 
 .leftside:hover .img3{
-    transform: translate(140px,45px) rotate(18deg);
+    transform: translate(140px,40px) rotate(15deg);
 }
 
 .rightside{
@@ -266,6 +266,7 @@ li{
     font-size: 50px;
     margin-bottom: 20px;
     text-align: center;
+    color: #d6a85d;
 }
 
 .rightside p{
@@ -273,6 +274,7 @@ li{
     text-align: justify;
     font-size: 12px;
     text-align: center;
+    
 }
 /* ABOUT SECTION END */
 /* COLLECTION START */
@@ -304,12 +306,34 @@ li{
 }
 
 .slider{
-
+    position:relative;
     overflow:hidden;
     width:100%;
-    padding:60px 0;
+    padding:80px 0; 
+}
+.slider::before{
+    
+    content:"";
+    position:absolute;
+    top:-90px;
+    left:-5%;
+    width:110%;
+    height:200px;
+    background:var(--main-bg2);
+    border-radius:35%;
+    z-index:2;
+}
+.slider::after{
 
-    clip-path: ellipse(100% 75% at 50% 50%);
+    content:"";
+    position:absolute;
+    bottom:-90px;
+    left:-5%;
+    width:110%;
+    height:200px;
+    background:var(--main-bg2);
+    border-radius:35%;
+    z-index:2;
 }
 
 .slide-track{
@@ -317,22 +341,22 @@ li{
     display:flex;
     gap:25px;
     width:max-content;
-
     animation: scroll 25s linear infinite;
 }
-
 
 .card{
 
     flex-shrink:0;
-
     width:220px;
     height:300px;
-
     border-radius:18px;
     overflow:hidden;
-
     background:white;
+}
+
+.card:hover{
+
+    transform:translateY(-15px) scale(1.05);
 }
 
 .card img{
@@ -353,4 +377,249 @@ li{
         transform:translateX(-50%);
     }
 
+}
+.slide-track:hover{
+    animation-play-state: paused;
+}
+/* COLLECTION END  */
+/* WHY CHOOSE US */
+.why-choose{
+    width:100%;
+    padding:100px 8%;
+    background:#0f0f0f;
+    color:#fff;
+    overflow:hidden;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:80px;
+}
+
+.section-title h4{
+    color:#d4a14d;
+    letter-spacing:4px;
+    font-size:15px;
+}
+
+.section-title h2{
+    font-size:45px;
+    font-weight:500;
+    margin-top:10px;
+}
+
+.why-container{
+    position:relative;
+    display:grid;
+    grid-template-columns:1fr auto 1fr;
+    grid-template-rows:repeat(2,230px);
+    align-items:center;
+    gap:45px;
+}
+
+/* Background Brand Name */
+
+.brand-bg{
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    font-size:220px;
+    font-weight:700;
+    letter-spacing:18px;
+    color:rgba(255,255,255,.03);
+    user-select:none;
+    pointer-events:none;
+    white-space:nowrap;
+}
+
+/* Center Bag */
+
+.bag-image{
+    grid-column:2;
+    grid-row:1 / span 2;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+}
+
+/* Spotlight */
+
+.bag-image::before{
+    content:"";
+    position:absolute;
+    width:380px;
+    height:380px;
+    background:radial-gradient(circle,
+    rgba(212,161,77,.25),
+    transparent 70%);
+    border-radius:50%;
+    filter:blur(20px);
+    z-index:-2;
+}
+
+/* Gold Ring */
+
+.bag-image::after{
+    content:"";
+    position:absolute;
+    width:440px;
+    height:440px;
+    border-radius:50%;
+    border:1px solid rgba(212,161,77,.18);
+    z-index:-1;
+}
+
+.bag-image img{
+    width:260px;
+    animation:float 5s ease-in-out infinite;
+    transition:.4s;
+}
+
+.bag-image img:hover{
+    transform:scale(1.05);
+}
+
+/* Floating Animation */
+
+@keyframes float{
+
+0%{
+transform:translateY(0);
+}
+
+50%{
+transform:translateY(-12px);
+}
+
+100%{
+transform:translateY(0);
+}
+
+}
+
+/* Feature Cards */
+
+.feature{
+    position:relative;
+    background:rgba(255,255,255,.04);
+    backdrop-filter:blur(20px);
+    border:1px solid rgba(212,161,77,.15);
+    border-radius:24px;
+    padding:35px;
+    overflow:hidden;
+    transition:.4s;
+    box-shadow:0 15px 40px rgba(0,0,0,.35);
+}
+
+/* Gold Line */
+
+.feature::before{
+    content:"";
+    position:absolute;
+    left:35%;
+    top:0;
+    width:100px;
+    height:3px;
+    background:#d4a14d;
+}
+
+/* Decorative Dots */
+
+.feature::after{
+    content:"";
+    position:absolute;
+    right:20px;
+    bottom:20px;
+    width:7px;
+    height:7px;
+    border-radius:50%;
+    background:#d4a14d;
+    box-shadow:
+    15px 0 #d4a14d,
+    30px 0 #d4a14d;
+    opacity:.5;
+}
+
+.feature:hover{
+    transform:translateY(-12px) scale(1.03);
+    border-color:#d4a14d;
+    box-shadow:0 25px 60px rgba(212,161,77,.18);
+}
+
+.feature span{
+    display:block;
+    font-size:50px;
+    color:rgba(212,161,77,.15);
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+.feature h3{
+    color:#d4a14d;
+    margin-bottom:15px;
+    font-size:22px;
+}
+
+.feature p{
+    color:#cfcfcf;
+    line-height:1.8;
+}
+
+/* Offset Layout */
+
+.top-left{
+    transform:translateY(-35px);
+}
+
+.top-right{
+    transform:translateY(-35px);
+}
+
+.bottom-left{
+    transform:translateY(25px);
+}
+
+.bottom-right{
+    transform:translateY(25px);
+}
+
+/* Responsive */
+
+@media(max-width:992px){
+
+.why-container{
+    display:flex;
+    flex-direction:column;
+}
+
+.brand-bg{
+    font-size:90px;
+}
+
+.bag-image::after{
+    width:320px;
+    height:320px;
+}
+
+.bag-image::before{
+    width:260px;
+    height:260px;
+}
+
+.bag-image img{
+    width:250px;
+}
+
+.top-left,
+.top-right,
+.bottom-left,
+.bottom-right{
+    transform:none;
+}
+
+.feature{
+    width:100%;
+}
 }
