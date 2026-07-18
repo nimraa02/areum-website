@@ -221,7 +221,6 @@ li{
   filter: blur(40px);
   z-index: 1;
 }
-
 .grid-item {
   position: relative;
   z-index: 2;
@@ -231,7 +230,6 @@ li{
   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
   transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.6s ease;
 }
-
 .img-wrapper {
   width: 100%;
   height: 100%;
@@ -239,7 +237,6 @@ li{
   background-position: center;
   transition: transform 0.8s ease;
 }
-
 /* Image Background Assignments */
 .bg-main { background-image: url("/bags/bagg.jpg"); }
 .bg-top { background-image: url("/bags/bag closeup.jpg"); }
