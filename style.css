@@ -529,7 +529,7 @@ li{
 .slide-track:hover{
     animation-play-state: paused;
 }
-/* COLLECTION SECTION END  */
+/* COLLECTION END  */
 /* ARRIVAL SECTION START */
 .arrival{
     width:100%;
@@ -545,6 +545,16 @@ li{
     justify-content: space-between;
     align-items: flex-end;
     margin-bottom: 60px;
+}
+.arrival-main span{
+    color:#d6a85d;
+    letter-spacing:5px;
+    margin-bottom:15px;
+}
+.arrival-main h1{
+    font-size:38px;
+    margin-bottom:15px;
+    margin-top: 15px;
 }
 .badge{
     position:absolute;
@@ -573,6 +583,19 @@ li{
 .arrival-image:hover img{
     transform: scale(1.08);
 }
+.card-icons{
+    position:absolute;
+    top:15px;
+    right:15px;
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+    opacity:0;
+    transition:1.4s;
+}
+.arrival-card:hover .card-icons{
+    opacity: 1;
+}
 .arrival-cards{
     display:grid;
     grid-template-columns:repeat(4,1fr);
@@ -588,24 +611,36 @@ li{
 .arrival-card:hover{
     transform: translateY(-10px);
 }
-.rating{
-    color: yellow;
+.arrival-content{
+    padding:22px 5px;
+    text-align:left;
 }
-.arrival-main span{
+.cart-btn{
+    width:100%;
+    padding:14px;
+    background:transparent;
+    border:1px solid #d6a85d;
     color:#d6a85d;
-    letter-spacing:5px;
-    margin-bottom:15px;
-
+    transition:.4s;
 }
-.arrival-main h1{
-    font-size:38px;
-    margin-bottom:15px;
-    margin-top: 15px;
+.cart-btn:hover{
+    background:#d6a85d;
+    color:#111;
+}
+.rating{
+    color:#d6a85d;
+    font-size:13px;
+    letter-spacing:2px;
 }
 
 
 
 
+
+
+
+
+/* ARRIVAL SECTION END  */
 /* WHY CHOOSE US */
 .why-choose{
     width:100%;
@@ -720,6 +755,7 @@ transform:translateY(-12px);
 100%{
 transform:translateY(0);
 }
+
 }
 
 /* Feature Cards */
