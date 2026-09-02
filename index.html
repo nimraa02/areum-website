@@ -1,361 +1,852 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>AREUM | Luxury Leather Handbags</title>
+
+    <meta name="description"
+        content="AREUM crafts timeless handbags in premium leather — handcrafted, modern, and made for the spotlight. Shop the luxury leather collection.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
     <link rel="stylesheet" href="style.css">
-<script type="module" src="https://googleapis.com"></script>
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
+
 <body>
 
-<!-- HEROSECTION START -->
+    <!-- Menu and cart controls -->
+    <input type="checkbox" id="menuToggle" class="hidden-toggle">
+    <input type="checkbox" id="cartToggle" class="hidden-toggle">
 
-<section class="herosection">
-    <div class="hero-container">
 
-<!-- NAVBAR -->
+    <!-- NAVBAR -->
 
-        <nav>
-            <a href="#" class="logo">
-                AREUM
-            </a>
-            <div class="nav-links">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Shop</a></li>
-                    <li><a href="#">Collection</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-                <div class="cart-icon">
-                    <i class="fa-solid fa-bag-shopping"></i>
-                </div>
-            </div>
+    <header class="site-nav">
+
+        <a href="#home" class="logo">AREUM</a>
+
+        <nav class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#shop">Shop</a>
+            <a href="#collection">Collection</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
         </nav>
 
-<!-- HEROCONTENT -->
+        <div class="nav-actions">
 
-        <div class="hero-content">
+            <label for="cartToggle" class="cart-icon" aria-label="Open cart">
+                <i class="fa-solid fa-bag-shopping"></i>
+            </label>
 
-<!-- LEFT CONTENT -->
+            <label for="menuToggle" class="hamburger" aria-label="Open menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
 
-            <div class="left-side">
-                <span class="hero-tag">
-                    LUXURY LEATHER COLLECTION
-                </span>
-                <div class="main-head">
-                    <h1>
-                        Crafted For<br>
-                        The Spotlight
-                    </h1>
+        </div>
+
+    </header>
+
+
+    <!-- MOBILE MENU -->
+
+    <div class="mobile-menu">
+
+        <div class="mobile-menu-head">
+            <span class="logo">AREUM</span>
+
+            <label for="menuToggle" class="close-btn" aria-label="Close menu">
+                <i class="fa-solid fa-xmark"></i>
+            </label>
+        </div>
+
+        <ul class="mobile-links">
+
+            <li>
+                <label for="menuToggle">
+                    <a href="#home">Home</a>
+                </label>
+            </li>
+
+            <li>
+                <label for="menuToggle">
+                    <a href="#shop">Shop</a>
+                </label>
+            </li>
+
+            <li>
+                <label for="menuToggle">
+                    <a href="#collection">Collection</a>
+                </label>
+            </li>
+
+            <li>
+                <label for="menuToggle">
+                    <a href="#about">About</a>
+                </label>
+            </li>
+
+            <li>
+                <label for="menuToggle">
+                    <a href="#contact">Contact</a>
+                </label>
+            </li>
+
+        </ul>
+
+        <div class="mobile-menu-foot">
+
+            <span>Follow us</span>
+
+            <div class="social-row">
+                <a href="#" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#" aria-label="Pinterest">
+                    <i class="fa-brands fa-pinterest-p"></i>
+                </a>
+
+                <a href="#" aria-label="TikTok">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <label for="menuToggle" class="menu-overlay"></label>
+
+
+    <!-- HERO SECTION -->
+
+    <section class="herosection" id="home">
+
+        <div class="hero-container">
+
+            <div class="hero-content">
+
+                <!-- Left side -->
+
+                <div class="left-side">
+
+                    <div class="main-head">
+                        <h1>
+                            Crafted<br>
+                            For<br>
+                            The Spotlight
+                        </h1>
+                    </div>
+
+                    <div class="hero-para">
+                        <p>
+                            Discover timeless handbags designed with premium leather,
+                            exceptional craftsmanship, and modern elegance for every occasion.
+                        </p>
+                    </div>
+
+                    <div class="hero-buttons">
+
+                        <a href="#shop" class="shop-btn">
+                            Shop Now
+                        </a>
+
+                        <a href="#about" class="explore-btn">
+                            Explore →
+                        </a>
+
+                    </div>
+
                 </div>
-                <div class="hero-para">
-                    <p>
-                        Discover timeless handbags designed with premium leather,
-                        exceptional craftsmanship, and modern elegance for every occasion.
+
+
+                <!-- Right side -->
+
+                <div class="right-side">
+
+                    <span class="hero-tag">
+                        LUXURY LEATHER COLLECTION
+                    </span>
+
+                    <div class="hero-images">
+                        <div class="upward-img1"></div>
+                        <div class="upward-img2"></div>
+                        <div class="downward-img1"></div>
+                        <div class="downward-img2"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- COLLECTION -->
+
+    <section class="collection" id="collection">
+
+        <div class="collection-heading">
+
+            <h4>OUR COLLECTION</h4>
+
+            <h1>Discover Luxury Bags</h1>
+
+            <p>Crafted with elegance for every occasion.</p>
+
+        </div>
+
+
+        <div class="slider">
+
+            <div class="slide-track">
+
+                <div class="card">
+                    <img src=""
+                        alt="Noir Tote" loading="lazy">
+                </div>
+
+                <div class="card">
+                    <img src=""
+                        alt="Camel Satchel" loading="lazy">
+                </div>
+
+                <div class="card">
+                    <img src=""
+                        alt="Orchid Clutch" loading="lazy">
+                </div>
+
+                <div class="card">
+                    <img src=""
+                        alt="Ivory Crossbody" loading="lazy">
+                </div>
+
+                <div class="card">
+                    <img src=""
+                        alt="Burgundy Hobo" loading="lazy">
+                </div>
+
+                <div class="card">
+                    <img src=""
+                        alt="Onyx Weekender" loading="lazy">
+                </div>
+
+
+                <!-- Duplicate cards for the scrolling effect -->
+
+                <div class="card">
+                    <img src=""
+                        alt="Noir Tote" loading="lazy">
+                </div>
+
+                <div class="card">
+                    <img src=""
+                        alt="Camel Satchel" loading="lazy">
+                </div>
+
+                <div class="card">
+                    <img src=""
+                        alt="Orchid Clutch" loading="lazy">
+                </div>
+
+                <div class="card">
+                    <img src=""
+                        alt="Ivory Crossbody" loading="lazy">
+                </div>
+
+                <div class="card">
+                    <img src=""
+                        alt="Burgundy Hobo" loading="lazy">
+                </div>
+
+                <div class="card">
+                    <img src=""
+                        alt="Onyx Weekender" loading="lazy">
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT SECTION -->
+
+    <section class="about-section" id="about">
+
+        <div class="about-container">
+
+            <div class="gallery-grid">
+
+                <div class="glow-effect"></div>
+
+                <div class="grid-item item-main">
+                    <div class="img-wrapper bg-main"></div>
+                </div>
+
+                <div class="grid-item item-accent-top">
+                    <div class="img-wrapper bg-top"></div>
+                </div>
+
+                <div class="grid-item item-accent-bottom">
+                    <div class="img-wrapper bg-bottom"></div>
+                </div>
+
+            </div>
+
+
+            <div class="content-side">
+
+                <div class="header-group">
+
+                    <span class="tagline">OUR LEGACY</span>
+
+                    <h2>
+                        Crafted Passion.<br>
+                        Designed Elegance.
+                    </h2>
+
+                </div>
+
+
+                <div class="pitch-container">
+
+                    <p class="highlight-text">
+                        Luxury isn't just fashion — it is a quiet confidence.
+                        We merge heritage craftsmanship with modern, everyday utility.
                     </p>
+
+                    <div class="divider"></div>
+
                 </div>
-                <div class="hero-buttons">
-                    <a href="#" class="shop-btn">
-                        Shop Collection
-                    </a>
-                    <a href="#" class="explore-btn">
-                        Explore →
-                    </a>
+
+
+                <div class="luxury-stats">
+
+                    <div class="stat-card">
+                        <span class="stat-num">10K+</span>
+                        <span class="stat-label">Clients</span>
+                    </div>
+
+                    <div class="stat-card">
+                        <span class="stat-num">100%</span>
+                        <span class="stat-label">Leather</span>
+                    </div>
+
+                    <div class="stat-card">
+                        <span class="stat-num">15+</span>
+                        <span class="stat-label">Years</span>
+                    </div>
+
                 </div>
-            </div>
 
-<!-- RIGHT CONTENT -->
 
-            <div class="right-side">
-                <div class="hero-images">
-                    <div class="upward-img1"></div>
-                    <div class="upward-img2"></div>
-                    <div class="downward-img1"></div>
-                    <div class="downward-img2"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+                <a href="#collection" class="luxury-action">
 
-<!-- HEROSECTION END -->
- <!-- COLLECTION START     -->
-  
-<section class="collection">
+                    <span>DISCOVER COLLECTION</span>
 
-    <div class="collection-heading">
-        <h4>OUR COLLECTION</h4>
-        <h1>Discover Luxury Bags</h1>
-        <p>Crafted with elegance for every occasion.</p>
-    </div>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="1.5">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
 
-    <div class="slider">
-        <div class="slide-track">
+                </a>
 
-            <!-- Cards -->
-            <div class="card">
-                <img src="/bags/brownbag.jpg" alt="Luxury Leather Bag" loading="lazy">
-            </div>
-
-            <div class="card">
-                <img src="/bags/greybag.jpg" alt="Luxury Leather Bag" loading="lazy">
-            </div>
-
-            <div class="card">
-                <img src="/bags/purple.jpg" alt="Luxury Leather Bag" loading="lazy">
-            </div>
-
-            <div class="card">
-                <img src="/bags/whitebag.jpg" alt="Luxury Leather Bag" loading="lazy">
-            </div>
-
-            <div class="card">
-                <img src="/bags/burgendy.jpg" alt="Luxury Leather Bag" loading="lazy">
-            </div>
-
-            <div class="card">
-                <img src="/bags/blackbag.jpg" alt="Luxury Leather Bag" loading="lazy">
-            </div>
-
-            <div class="card">
-                <img src="/bags/brownbag.jpg" alt="Luxury Leather Bag" loading="lazy">
-            </div>
-
-            <div class="card">
-                <img src="/bags/greybag.jpg" alt="Luxury Leather Bag" loading="lazy">
-            </div>
-
-            <div class="card">
-                <img src="/bags/purple.jpg" alt="Luxury Leather Bag" loading="lazy">
-            </div>
-
-            <div class="card">
-                <img src="/bags/whitebag.jpg" alt="Luxury Leather Bag" loading="lazy">
-            </div>
-
-            <div class="card">
-                <img src="/bags/burgendy.jpg" alt="Luxury Leather Bag" loading="lazy">
-            </div>
-
-            <div class="card">
-                <img src="/bags/blackbag.jpg" alt="Luxury Leather Bag" loading="lazy">
             </div>
 
         </div>
 
-    </div>
-
-</section>
+    </section>
 
 
-<!-- COLLECTION END -->
-    <!-- ABOUT US START -->
+    <!-- NEW ARRIVALS -->
 
-<section class="about-section">
-  <div class="about-container">
-    
-    <div class="gallery-grid">
-      <div class="glow-effect"></div>
-      <div class="grid-item item-main">
-        <div class="img-wrapper bg-main"></div>
-      </div>
-      <div class="grid-item item-accent-top">
-        <div class="img-wrapper bg-top"></div>
-      </div>
-      <div class="grid-item item-accent-bottom">
-        <div class="img-wrapper bg-bottom"></div>
-      </div>
-    </div>
-    
-    <div class="content-side">
-      <div class="header-group">
-        <span class="tagline">OUR LEGACY</span>
-        <h2>Crafted Passion.<br>Designed Elegance.</h2>
-      </div>
-      
-      <div class="pitch-container">
-        <p class="highlight-text">Luxury isn’t just fashion—it is a quiet confidence. We merge heritage craftsmanship with modern, everyday utility.</p>
-        <div class="divider"></div>
-      </div>
+    <section class="arrival" id="shop">
 
-      <div class="luxury-stats">
-        <div class="stat-card">
-          <span class="stat-num">10K+</span>
-          <span class="stat-label">Clients</span>
-        </div>
-        <div class="stat-card">
-          <span class="stat-num">100%</span>
-          <span class="stat-label">Leather</span>
-        </div>
-        <div class="stat-card">
-          <span class="stat-num">15+</span>
-          <span class="stat-label">Years</span>
-        </div>
-      </div>
-
-      <a href="#" class="luxury-action">
-        <span>DISCOVER COLLECTION</span>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-      </a>
-    </div>
-
-  </div>
-</section>
-
-    <!-- ABOUT SECTION END -->
-     <!-- ARRIVAL SECTION START-->
-
-      <section class="arrival">
         <div class="arrival-header">
-        <div class="arrival-main">
-            <span>NEW ARRIVALS</span> 
-            <h1>The Latest Expressions Of Luxury</h1>
+
+            <div class="arrival-main">
+
+                <span>NEW ARRIVALS</span>
+
+                <h1>The Latest Expressions Of Luxury</h1>
+
+            </div>
+
+            <a href="#" class="view-btn">
+                View All →
+            </a>
+
         </div>
-       <a href="#" class="view-btn">
-            View All →
-        </a>
-        </div>
+
+
         <div class="arrival-cards">
+
+
+            <!-- Product 1 -->
+
             <div class="arrival-card">
+
                 <div class="arrival-image">
-                <span class="badge">NEW</span>
-                <img src="bags/bag1.png" alt="Aurora Bag">
-                <div class="card-icons">
-                    <button><i class=" fa-regular fa-heart "></i></button>
-                    <button><i class=" fa-regular fa-eye "></i></button>
-                </div>  
-                </div> 
-            <div class="arrival-content">
-                <h3>Aurora Bag</h3>
-                <div class="price-row">
-                    <span class="price">$44</span>
-                    <div class="rating">
-                        ★★★★★
+
+                    <span class="badge">NEW</span>
+
+                    <img src=""
+                        alt="Aurora Bag" loading="lazy">
+
+                    <div class="card-icons">
+
+                        <input type="checkbox" id="wish-p1" class="wish-checkbox">
+
+                        <label for="wish-p1" class="wish-btn">
+                            <i class="fa-regular fa-heart heart-outline"></i>
+                            <i class="fa-solid fa-heart heart-filled"></i>
+                        </label>
+
+                        <a href="#qv-P1" class="qv-btn">
+                            <i class="fa-regular fa-eye"></i>
+                        </a>
+
                     </div>
+
                 </div>
-                <button class="cart-btn">
-                    Add To Cart
-                </button>
+
+
+                <div class="arrival-content">
+
+                    <h3>Aurora Bag</h3>
+
+                    <div class="price-row">
+                        <span class="price">$184</span>
+                        <div class="rating">★★★★★</div>
+                    </div>
+
+                    <label for="cartToggle" class="cart-btn">
+                        Add To Cart
+                    </label>
+
+                </div>
+
             </div>
-            </div>
+
+
+            <!-- Product 2 -->
+
             <div class="arrival-card">
+
                 <div class="arrival-image">
-                <span class="badge">NEW</span>
-                <img src="bags/bag1.png" alt="Aurora Bag">
-                <div class="card-icons">
-                    <button><i class=" fa-regular fa-heart "></i></button>
-                    <button><i class=" fa-regular fa-eye "></i></button>
-                </div>  
-                </div> 
-            <div class="arrival-content">
-                <h3>Classy Bag</h3>
-                <div class="price-row">
-                    <span class="price">$46</span>
-                    <div class="rating">
-                        ★★★★★
+
+                    <span class="badge">NEW</span>
+
+                    <img src=""
+                        alt="Classic Tote" loading="lazy">
+
+                    <div class="card-icons">
+
+                        <input type="checkbox" id="wish-p2" class="wish-checkbox">
+
+                        <label for="wish-p2" class="wish-btn">
+                            <i class="fa-regular fa-heart heart-outline"></i>
+                            <i class="fa-solid fa-heart heart-filled"></i>
+                        </label>
+
+                        <a href="#qv-p2" class="qv-btn">
+                            <i class="fa-regular fa-eye"></i>
+                        </a>
+
                     </div>
+
                 </div>
-                <button class="cart-btn">
-                    Add To Cart
-                </button>
+
+
+                <div class="arrival-content">
+
+                    <h3>Classic Tote</h3>
+
+                    <div class="price-row">
+                        <span class="price">$208</span>
+                        <div class="rating">★★★★★</div>
+                    </div>
+
+                    <label for="cartToggle" class="cart-btn">
+                        Add To Cart
+                    </label>
+
+                </div>
+
             </div>
-            </div>
+
+
+            <!-- Product 3 -->
+
             <div class="arrival-card">
+
                 <div class="arrival-image">
-                <span class="badge">NEW</span>
-                <img src="bags/bag1.png" alt="Aurora Bag">
-                <div class="card-icons">
-                    <button><i class=" fa-regular fa-heart "></i></button>
-                    <button><i class=" fa-regular fa-eye "></i></button>
-                </div>  
-                </div> 
-            <div class="arrival-content">
-                <h3>burgundy Bag</h3>
-                <div class="price-row">
-                    <span class="price">$74</span>
-                    <div class="rating">
-                        ★★★★★
+
+                    <span class="badge">NEW</span>
+
+                    <img src=""
+                        alt="Burgundy Satchel" loading="lazy">
+
+                    <div class="card-icons">
+
+                        <input type="checkbox" id="wish-p3" class="wish-checkbox">
+
+                        <label for="wish-p3" class="wish-btn">
+                            <i class="fa-regular fa-heart heart-outline"></i>
+                            <i class="fa-solid fa-heart heart-filled"></i>
+                        </label>
+
+                        <a href="#qv-p3" class="qv-btn">
+                            <i class="fa-regular fa-eye"></i>
+                        </a>
+
                     </div>
+
                 </div>
-                <button class="cart-btn">
-                    Add To Cart
-                </button>
+
+
+                <div class="arrival-content">
+
+                    <h3>Burgundy Satchel</h3>
+
+                    <div class="price-row">
+                        <span class="price">$246</span>
+                        <div class="rating">★★★★☆</div>
+                    </div>
+
+                    <label for="cartToggle" class="cart-btn">
+                        Add To Cart
+                    </label>
+
+                </div>
+
             </div>
-            </div>
+
+
+            <!-- Product 4 -->
+
             <div class="arrival-card">
+
                 <div class="arrival-image">
-                <span class="badge">NEW</span>
-                <img src="/bags" alt="Aurora Bag">
-                <div class="card-icons">
-                   <button><i class=" fa-regular fa-heart "></i></button>
-                    <button><i class=" fa-regular fa-eye "></i></button>
-                </div>  
-                </div> 
-            <div class="arrival-content">
-                <h3>amerald Bag</h3>
-                <div class="price-row">
-                    <span class="price">$64</span>
-                    <div class="rating">
-                        ★★★★★
+
+                    <span class="badge">NEW</span>
+
+                    <img src=""
+                        alt="Emerald Clutch" loading="lazy">
+
+                    <div class="card-icons">
+
+                        <input type="checkbox" id="wish-p4" class="wish-checkbox">
+
+                        <label for="wish-p4" class="wish-btn">
+                            <i class="fa-regular fa-heart heart-outline"></i>
+                            <i class="fa-solid fa-heart heart-filled"></i>
+                        </label>
+
+                        <a href="#qv-p4" class="qv-btn">
+                            <i class="fa-regular fa-eye"></i>
+                        </a>
+
                     </div>
+
                 </div>
-                <button class="cart-btn">
-                    Add To Cart
-                </button>
+
+
+                <div class="arrival-content">
+
+                    <h3>Emerald Clutch</h3>
+
+                    <div class="price-row">
+                        <span class="price">$172</span>
+                        <div class="rating">★★★★★</div>
+                    </div>
+
+                    <label for="cartToggle" class="cart-btn">
+                        Add To Cart
+                    </label>
+
+                </div>
+
             </div>
+
+
+            <!-- Product 5 -->
+
+            <div class="arrival-card">
+
+                <div class="arrival-image">
+
+                    <img src=""
+                        alt="Noir Hobo" loading="lazy">
+
+                    <div class="card-icons">
+
+                        <input type="checkbox" id="wish-p5" class="wish-checkbox">
+
+                        <label for="wish-p5" class="wish-btn">
+                            <i class="fa-regular fa-heart heart-outline"></i>
+                            <i class="fa-solid fa-heart heart-filled"></i>
+                        </label>
+
+                        <a href="#qv-p5" class="qv-btn">
+                            <i class="fa-regular fa-eye"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="arrival-content">
+
+                    <h3>Noir Hobo</h3>
+
+                    <div class="price-row">
+                        <span class="price">$229</span>
+                        <div class="rating">★★★★☆</div>
+                    </div>
+
+                    <label for="cartToggle" class="cart-btn">
+                        Add To Cart
+                    </label>
+
+                </div>
+
             </div>
+
+
+            <!-- Product 6 -->
+
+            <div class="arrival-card">
+
+                <div class="arrival-image">
+
+                    <img src=""
+                        alt="Ivory Crossbody" loading="lazy">
+
+                    <div class="card-icons">
+
+                        <input type="checkbox" id="wish-p6" class="wish-checkbox">
+
+                        <label for="wish-p6" class="wish-btn">
+                            <i class="fa-regular fa-heart heart-outline"></i>
+                            <i class="fa-solid fa-heart heart-filled"></i>
+                        </label>
+
+                        <a href="#qv-p6" class="qv-btn">
+                            <i class="fa-regular fa-eye"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="arrival-content">
+
+                    <h3>Ivory Crossbody</h3>
+
+                    <div class="price-row">
+                        <span class="price">$198</span>
+                        <div class="rating">★★★★★</div>
+                    </div>
+
+                    <label for="cartToggle" class="cart-btn">
+                        Add To Cart
+                    </label>
+
+                </div>
+
+            </div>
+
+
+            <!-- Product 7 -->
+
+            <div class="arrival-card">
+
+                <div class="arrival-image">
+
+                    <img src="https://placehold.co/560x760/1b1b1b/d6a85d?text=Camel+Weekender&font=montserrat"
+                        alt="Camel Weekender" loading="lazy">
+
+                    <div class="card-icons">
+
+                        <input type="checkbox" id="wish-p7" class="wish-checkbox">
+
+                        <label for="wish-p7" class="wish-btn">
+                            <i class="fa-regular fa-heart heart-outline"></i>
+                            <i class="fa-solid fa-heart heart-filled"></i>
+                        </label>
+
+                        <a href="#qv-p7" class="qv-btn">
+                            <i class="fa-regular fa-eye"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="arrival-content">
+
+                    <h3>Camel Weekender</h3>
+
+                    <div class="price-row">
+                        <span class="price">$312</span>
+                        <div class="rating">★★★★★</div>
+                    </div>
+
+                    <label for="cartToggle" class="cart-btn">
+                        Add To Cart
+                    </label>
+
+                </div>
+
+            </div>
+
+
+            <!-- Product 8 -->
+
+            <div class="arrival-card">
+
+                <div class="arrival-image">
+
+                    <img src=""
+                        alt="Blush Mini Bag" loading="lazy">
+
+                    <div class="card-icons">
+
+                        <input type="checkbox" id="wish-p8" class="wish-checkbox">
+
+                        <label for="wish-p8" class="wish-btn">
+                            <i class="fa-regular fa-heart heart-outline"></i>
+                            <i class="fa-solid fa-heart heart-filled"></i>
+                        </label>
+
+                        <a href="#qv-p8" class="qv-btn">
+                            <i class="fa-regular fa-eye"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="arrival-content">
+
+                    <h3>Blush Mini Bag</h3>
+
+                    <div class="price-row">
+                        <span class="price">$156</span>
+                        <div class="rating">★★★★☆</div>
+                    </div>
+
+                    <label for="cartToggle" class="cart-btn">
+                        Add To Cart
+                    </label>
+
+                </div>
+
+            </div>
+
         </div>
-      </section>
 
-<!-- ARRIVAL SECTION END -->
- <!-- WHY CHOOSE US -->
+    </section>
 
-  <section class="why-choose">
 
-    <div class="section-title">
-        <h4>WHY CHOOSE US</h4>
-        <h2>Crafted for Modern Elegance</h2>
-    </div>
+    <!-- WHY CHOOSE US -->
 
-    <div class="why-container">
+    <section class="why-choose">
 
-        <div class="brand-bg">AREUM</div>
-
-        <div class="feature top-left">
-            <span>01</span>
-            <h3>Premium Leather</h3>
-            <p>Made from carefully selected leather that ages beautifully over time.</p>
+        <div class="section-title">
+            <h4>WHY CHOOSE US</h4>
+            <h2>Crafted for Modern Elegance</h2>
         </div>
 
-        <div class="feature top-right">
-            <span>02</span>
-            <h3>Handcrafted</h3>
-            <p>Every stitch is completed by skilled artisans with exceptional precision.</p>
+
+        <div class="why-container">
+
+            <div class="brand-bg">AREUM</div>
+
+
+            <div class="feature top-left">
+
+                <span>01</span>
+
+                <h3>Premium Leather</h3>
+
+                <p>
+                    Made from carefully selected leather that ages beautifully over time.
+                </p>
+
+            </div>
+
+
+            <div class="feature top-right">
+
+                <span>02</span>
+
+                <h3>Handcrafted</h3>
+
+                <p>
+                    Every stitch is completed by skilled artisans with exceptional precision.
+                </p>
+
+            </div>
+
+
+            <div class="bag-image">
+
+                <img src=""
+                    alt="Signature AREUM handbag">
+
+            </div>
+
+
+            <div class="feature bottom-left">
+
+                <span>03</span>
+
+                <h3>Timeless Design</h3>
+
+                <p>
+                    Elegant silhouettes created to elevate your everyday style.
+                </p>
+
+            </div>
+
+
+            <div class="feature bottom-right">
+
+                <span>04</span>
+
+                <h3>Free Shipping</h3>
+
+                <p>
+                    Worldwide delivery with luxury packaging and secure protection.
+                </p>
+
+            </div>
+
         </div>
 
-        <div class="bag-image">
-            <img src="/bags/" alt="">
-        </div>
-
-        <div class="feature bottom-left">
-            <span>03</span>
-            <h3>Timeless Design</h3>
-            <p>Elegant silhouettes created to elevate your everyday style.</p>
-        </div>
-
-        <div class="feature bottom-right">
-            <span>04</span>
-            <h3>Free Shipping</h3>
-            <p>Worldwide delivery with luxury packaging and secure protection.</p>
-        </div>
-
-    </div>
-
-</section>
-    
-</body>
-</html>
+    </section>
