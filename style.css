@@ -66,6 +66,86 @@ img {
     outline-offset: 3px;
 }
 
+/* NAVBAR */
+
+.hidden-toggle {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    width: 0;
+    height: 0;
+}
+
+.site-nav {
+    position: sticky;
+    top: 0;
+    z-index: 300;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px 6%;
+    background: rgba(10, 10, 10, .7);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-bottom: 1px solid var(--border-seamless);
+}
+
+.site-nav .logo {
+    font-family: var(--font-editorial);
+    font-size: 28px;
+    letter-spacing: 3px;
+    color: var(--accent-color);
+}
+
+.nav-links {
+    display: flex;
+    gap: 45px;
+}
+
+.nav-links a {
+    color: var(--text-primary);
+    font-size: 13px;
+    letter-spacing: 2px;
+    transition: .4s;
+    position: relative;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 1px;
+    background: var(--accent-color);
+    transition: .4s;
+}
+
+.nav-links a:hover {
+    color: var(--accent-color);
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+}
+
+.cart-icon {
+    cursor: pointer;
+    font-size: 18px;
+    color: var(--text-primary);
+    transition: .3s;
+}
+
+.cart-icon:hover {
+    color: var(--accent-color);
+}
 
 /* HERO SECTION */
 
